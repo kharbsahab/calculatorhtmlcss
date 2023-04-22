@@ -1,0 +1,96 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background: #ccc;
+}
+
+.calculator {
+    margin: 100px auto;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 235px;
+    height: 320px;
+    gap: 1px;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 10px #555;
+    border: 1px solid #222;
+}
+
+.result {
+    font-size: 45px;
+    grid-row: span 2;
+    grid-column: span 4;
+    height: auto;
+    margin: 0;
+    background-color: #222;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+button {
+    border: none;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.clear,
+.plus–minus,
+.percentage {
+    background-color: #333;
+    transition: 100ms;
+}
+
+.clear:active,
+.plus–minus:active,
+.percentage:active {
+    background-color: #555;
+}
+
+.operator {
+    background-color: darkorange;
+    transition: 100ms;
+}
+
+.operator:active {
+    background-color: orange;
+}
+
+.equals {
+    background-color: darkorange;
+    transition: 100ms;
+    border-bottom-right-radius: 8px;
+}
+
+.equals:active {
+    background-color: orange;
+}
+
+.number {
+    background-color: #555;
+    transition: 100ms;
+}
+
+.number:active {
+    background-color: #777;
+}
+
+.zero {
+    grid-row: span 1;
+    grid-column: span 2;
+    border-bottom-left-radius: 8px;
+}
+
+.comma {}
